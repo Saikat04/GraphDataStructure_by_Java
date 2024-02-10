@@ -32,6 +32,12 @@ public class AdjancyListCreation {
 
         createGraph(graph);
 
+        //print the neighbours of 1st vertex
+        for(int i = 0; i < graph[1].size(); i++){
+            Edge e1 = graph[1].get(i);
+            System.out.println("S: "+e1.src+" D: "+e1.dest);
+        }
+
         //Print the neighbour of 2nd vertex
         for(int i=0 ; i<graph[2].size(); i++) {
             Edge e = graph[2].get(i);
